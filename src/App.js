@@ -1,11 +1,10 @@
 
 import Reloj from './components/Reloj';
 import styled from 'styled-components';
-import snow from './snow.jpg';
+//import snow from './snow.jpg';
 
 function App() {
-
-
+  const snow = "";
   const StyledDiv = styled.div`
     display: flex;
     background-image: url('${snow}');
@@ -19,24 +18,14 @@ function App() {
     background-repeat: no-repeat; 
     height: 100vh; 
   `
-
-
-
-
   return (
     <div className="App">
-
-
       <StyledDiv>
         <header className="App-header">
         </header>
-
-
         <Reloj />
       </StyledDiv>
-
     </div>
   );
 }
-
 export default App;
