@@ -1,20 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Reloj from './components/Reloj';
+import styled from 'styled-components';
+import snow from './snow.jpg';
 
 function App() {
+
+
+  const StyledDiv = styled.div`
+    display: flex;
+    background-image: url('${snow}');
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    transition: backdrop-filter 0.5s linear;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    height: 100vh; 
+  `
+
+
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        Estoy probando
-      </header>
-      <div id="main">
-        <p id="hora"></p>
-        <div className="rebote">
-          <div id="btn-login" ><span>Ingresar</span> <span className="material-symbols-outlined">
-            login
-          </span></div>
-        </div>
-      </div>
+
+
+      <StyledDiv>
+        <header className="App-header">
+        </header>
+
+
+        <Reloj />
+      </StyledDiv>
+
     </div>
   );
 }
