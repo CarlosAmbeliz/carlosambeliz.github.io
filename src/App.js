@@ -1,13 +1,9 @@
-
-import Reloj from './components/Reloj';
 import styled from 'styled-components';
-//import snow from './snow.jpg';
+import LoginForm from './Pages/User/Login';
 
 function App() {
-  const snow = "";
   const StyledDiv = styled.div`
     display: flex;
-    background-image: url('${snow}');
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -23,7 +19,7 @@ function App() {
       <StyledDiv>
         <header className="App-header">
         </header>
-        <Reloj />
+        <LoginForm />
       </StyledDiv>
     </div>
   );
