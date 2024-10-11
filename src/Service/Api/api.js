@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'oci-server.ddns.net:3000/api',
+  baseURL: 'https://api.siews.net/api',
   headers: {
     'Content-Type': 'application/json',
   },
